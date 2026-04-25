@@ -872,7 +872,7 @@
   </div>
 
   <div class="source-note">
-    TourStat KG · Платформа туристической аналитики · <span>Кыргызстан</span><br>
+    TourAnalytics · Платформа туристической аналитики · <span>Кыргызстан</span><br>
     Данные: мобильные операторы + пограничная служба · Обновление каждые 15 минут
   </div>
 </main>
@@ -1245,7 +1245,7 @@ function toggleChat() {
   chatOpen = !chatOpen;
   document.getElementById('aiChatPanel').classList.toggle('open', chatOpen);
   if (chatOpen && chatHistory.length === 0) {
-    addAIMessage('Привет! 👋 Я анализирую данные TourStat в реальном времени. Спросите меня о лучших локациях для инвестиций, трендах туризма или стратегиях развития бизнеса в Кыргызстане.');
+    addAIMessage('Привет! 👋 Я анализирую данные TourAnalytics в реальном времени. Спросите меня о лучших локациях для инвестиций, трендах туризма или стратегиях развития бизнеса в Кыргызстане.');
   }
 }
 
@@ -1294,7 +1294,7 @@ function hideTyping() {
 }
 
 function buildSystemPrompt(data) {
-  return `Ты — ИИ-аналитик туристической платформы TourStat KG (Кыргызстан).
+  return `Ты — ИИ-аналитик туристической платформы TourAnalytics (Кыргызстан).
 Ты помогаешь компаниям, инвесторам и предпринимателям принимать решения об инвестициях в туристическую отрасль КР.
 
 ТЕКУЩИЕ ДАННЫЕ ДАШБОРДА (реальное время):
@@ -1398,7 +1398,7 @@ function setChatData(data) {
   <div class="chat-header">
     <div class="chat-header-icon">🧠</div>
     <div class="chat-header-text">
-      <div class="chat-header-name">TourStat AI</div>
+      <div class="chat-header-name">TourAnalytics</div>
       <div class="chat-header-sub">инвестиционный советник</div>
     </div>
     <button class="chat-close" onclick="toggleChat()">✕</button>
